@@ -2,19 +2,7 @@
 
 ## Contents
 
-- [Facts](#facts)
-- [Assumptions](#assumptions)
-- [Unknowns](#unknowns)
-- [Stakeholders and Goals](#stakeholders-and-goals)
-- [Scope Boundaries](#scope-boundaries)
-    - [In Scope](#in-scope)
-    - [Out of Scope](#out-of-scope)
-- [Out of Scope](#out-of-scope)
-- [Candidate Requirements](#candidate-requirements)
-    - [Functional Requirements](#functional-requirements)
-    - [Non-Functonal Requirements](#non-functional-requirements)
-- [Requirements Surgery](#requirements-surgery)
-- [Reflection](#reflection)
+
 
 ## Facts
 * The college aims to implement a unified online appointment booking system for student support services (academic counselling, financial guidance and disability support).
