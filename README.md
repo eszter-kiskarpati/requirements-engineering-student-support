@@ -18,3 +18,9 @@ Scenario B - College Student Support Appointment System
 This repository contains my Requirements Engineering project work, including requirements, models, prototypes, validation evidence and project revision.
 
 ## Contents
+
+1. [Initial Discovery](01-discovery/discovery.md)
+2. [Elicitation](02-elicitation/elicitation.md)
+3. [Requirements Analysis](03-requirements-analysis/requirements.md)
+4. []()
+5. []()

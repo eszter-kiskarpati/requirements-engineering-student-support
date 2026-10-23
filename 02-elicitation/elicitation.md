@@ -1,36 +1,92 @@
-# Requirements Catalogue
-
-## Functional Requirements
-
-| Requirement ID | Category | Description | Stakeholder | Priority |
-| :--- | :--- | :--- | :--- | :--- |
-| **FR-01** | Booking | The system shall allow authenticated students to search for available consultation slots filtered by support service, advisor name or date | Students | High |
-| **FR-02** | Booking | The system shall allow students to select which way they would prefer to have their session; online or in-person | Students / Support Staff | High |
-| **FR-03** | Booking | The system shall allow students to submit booking requests for open consultation time slots | Students / Support Staff | High |
-| **FR-04** | Conflict Mgmt | The system shall automatically flag booked appointments as unavailablly to prevent double-bookings and appointment calendar errors | Support Staff | High |
-| **FR-05** | Schedule Mgmt | The system shall allow support staff/advisors to set, modify or block out their weekly appointments and availability | Support Staff | High |
-| **FR-06** | Session Notes | The system shall allow authorized advisors to record private, structured interaction notes attached to a student's session history | Support Staff | Medium |
-| **FR-07** | Notifications | The system shall issue immediate automated email confirmations and calendar invites to both student and advisor upon booking confirmation | Students / Support Staff | High |
-| **FR-08** | Notifications | The system shall send automated appointment reminders via email 24 hours prior to the scheduled consultation time | Students | Medium |
-| **FR-09** | Cancellation | The system shall allow students and staff to cancel or reschedule appointments within a configurable lead-time buffer | Students / Staff | High |
-| **FR-10** | Confidentiality | The system shall restrict student session history and notes so that only authorized suppoert personnel asigned to the case might view them | It / Mgmt | High |
-| **FR-11** |  | The system shall generate anonymized usage reports for department heads showing booking demand across services, peak hours and attendace rates | Department Heads | Low |
-| **FR-0** | D | D | D | D |
-| **FR-0** | D | D | D | D |
+# 2. Elicitation
 
 
----
+## Contents
+
+1. [Stakeholder's Needs and Concerns](#1-stakeholders-needs-and-concerns)
+2. [Unknowns](#2-unknowns)
+3. [Information Sources](#3-information-sources)
+4. [Elicitation Questions](#4-elicitation-questions)
+5. [Candidate Requirement](#5-candidate-requirement)
 
 
-## Non-Functional Requirements
+*[Back to README](/README.md)*
 
-| Requirement ID | Category | Description | Target Metric | Priority |
-| :--- | :--- | :--- | :--- | :--- |
-| **NFR-01** | Performance | The search interface shall return available appointment slots quickly upon query submission | Display results within 2 seconds | High |
-| **NFR-02** | Usability | First time student users shall be able to schedule an appointment without requiring prior system training | Complete booking in under 3 minutes | High |
-| **NFR-03** | Security | System access shall require valid institutional single sign on credentials | 100% authenticated acceess via SSO/OAuth | High |
-| **NFR-04** | Privacy / Security | Confidential session notes and student records shall be encrypted both in transit and at rest | Compliance with institutianal data privacy standards (GDPR)| High |
-| **NFR-05** | Availability | The booking platform shall remain online and accessible during college term operating hours | 99.5% uptime during term time | Medium |
-| **NFR-06** | Scalability | The system shall handle concurrent user traffic during high stress academic periods (e.g., exam weeks) | Support at least 150 simuntaneous active sessions | Medium |
-| **NFR-07** | Reliability | The system shall retain audit logs for all scheduled, rescheduled and cancelled appointments | Maintain complete transaction logs for at least 1 academic year | Medium |
-| **NFR-0** | D | D | D | D |
+
+## 1. Stakeholder's Needs and Concerns
+
+* **Students**
+    * *Needs:* - Intuitive online searching, instant booking / cancellation, clear contact details and automated appointment reminders.
+    * *Concerns:* - Unceartainty over which support service to contact, difficulty finding available appointment slots and missing scheduled appointments caused by lack of reminders.
+* **Support Staff / Advisors**
+    * *Needs:* - Easy schedule management, daily appointment overviews, autmated schedule updates (cancellations / bookings).
+    * *Concerns:* - Spending excessive time managing appointments manually, dealing with unmanaged no-shows and handling last minute cancellations.
+* **Department Heads / Management**
+    * *Needs:* - Reports showing service demand, reports on peak usage times and attendance / no-show rates.
+    * *Concerns:* - Maintaining compliance, protecting sensitive student data and resource allocation issues.
+* **IT Administrator**
+    * *Needs:* - Centralised user role management and seamless integration with existing college authentication credentials.
+    * *Concerns:* - Security vulnerabilities, data privacy and system reliability during peak periods.
+
+## 2. Unknowns
+
+**Who can use it?**
+* Can a student hold more than one booking at once or book the same service repeatedly?
+* What level of authorization is needed to book an appointment?
+
+**The appointment itself**
+* How many services are there, and what are they?
+* What information does a student have to give when booking? Is there any optional information that is required?
+* Are appointments only one-to-one or are there any group sessions?
+* What shold happen if the slots are all full (a waiting list for example)?
+* Are there different appointment types? (in person, online, phone etc.)?
+* How are cancellations and no-shows handled?
+* What is the minimum cancellation notice required before a student loses or frees up an appointment slot?
+
+**Staff side**
+* What happens to an existing booking when a staff member is sick or on leave?
+* Can one advisor work across more than one service?
+* How should the system fit with the calendars and spreadsheets staff already use, if at all?
+
+**Information and privacy**
+* What level of authorization is needed to handle booking cancellations / rescheduling?
+* What data protectioin rules apply and who is responsible for the data?
+
+**Accessibility and support**
+* Do students with support needs require longer or priority slots?
+
+**Constraints**
+* Is there a budget, a deadline or a required technology?
+* Are there rules about when a student may book, such as how fat ahead or the maximum per term?
+
+## 3. Information Sources
+
+**Primary**
+
+* Interviews with support advisors and service managers
+* Interviews or a short survey with students who have already used support services
+* A conversation with the college's data protection contact and IT administrator
+
+**Secondary**
+* Current calendars, spreadsheets and email or phone enquiry records
+* College policies on data protection, accessibility and attendance
+* The student handbook and service web pages, to see what the students are told now
+
+## 4. Elicitation Questions
+
+| **Who I'm asking** | **Unknown it answers** | **Type of question** | **The Question** |
+| --- | --- | --- | --- |
+| Students | Why they are unsure which service to contact | Problem | "Can you tell me about the last time you needed support from the college? How did you work out who to contact?" |
+| Support Staff / Advisors | What happens to a booking when someone is sick or doesn't show | Exception | "Can you tell me about a time you couldn’t be at work when you had appointments booked? What happened to those appointments?" |
+| Management | Rules on when and how often students may book | Information needed | "What limits or rules currently apply to how often or how far ahead a student can book a service?" |
+| Data Protection Contact | Who is responsible for student data | Something we don't understand yet | "What information about students and their appointments does the college currently hold and who is responsible for protecting it??" |
+| Administrator | How appointments are arranged today | Current process | "Can you walk me through how an appointment gets arranged today, from the moment a student first makes contact?" |
+
+## 5. Candidate Requirement
+
+### CR-F01 - The system should allow authenticated students to search and view available support appointment slots by service type, advisor or date.
+
+* **Source:** Initial discovery of the College Student Support Appointment Sytem scenario
+* **Status:** Candidate - requires further investigation and validation
+* **Elicitation needed:** We have to clarify which search options students need and whether all support services use the same appointment booking process
+* **Stakeholders to ask:** Students and support staff / advisors
