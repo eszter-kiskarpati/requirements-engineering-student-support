@@ -3,7 +3,7 @@
 
 ## Contents
 
-1. [Stakeholder's Needs and Concerns](#1-stakeholders-needs-and-concerns)
+1. [Stakeholders' Needs and Concerns](#1-stakeholders-needs-and-concerns)
 2. [Unknowns](#2-unknowns)
 3. [Information Sources](#3-information-sources)
 4. [Elicitation Questions](#4-elicitation-questions)
@@ -13,7 +13,9 @@
 *[Back to README](/README.md)*
 
 
-## 1. Stakeholder's Needs and Concerns
+## 1. Stakeholders' Needs and Concerns
+
+*Administrative Staff* and the *IT Administrator* were identified as potential stakeholders during discovery.
 
 * **Students**
     * *Needs:* - Intuitive online searching, instant booking / cancellation, clear contact details and automated appointment reminders.
@@ -24,9 +26,15 @@
 * **Department Heads / Management**
     * *Needs:* - Reports showing service demand, reports on peak usage times and attendance / no-show rates.
     * *Concerns:* - Maintaining compliance, protecting sensitive student data and resource allocation issues.
-* **IT Administrator**
+* **IT Administrator (Potential)**
     * *Needs:* - Centralised user role management and seamless integration with existing college authentication credentials.
     * *Concerns:* - Security vulnerabilities, data privacy and system reliability during peak periods.
+* **Administrative Staff (Potential)**
+    * *Needs:* - Ease of contact for all support departments and access to information on both the students and the support staff
+    * *Concerns:* - Protecting sensitive student information, not having access to up-to-date information regarding the departments, keeping accurate records
+* **Data Protection Contact (Potential)**
+    * *Needs:* - Knowledge of exactly what information the system will require from its users 
+    * *Concerns:* - Compliance with laws regarding personal user information, making sure of correct usage of sensitive data
 
 ## 2. Unknowns
 
@@ -51,6 +59,9 @@
 **Information and privacy**
 * What level of authorization is needed to handle booking cancellations / rescheduling?
 * What data protectioin rules apply and who is responsible for the data?
+* What credentials are currently used for the login sytem, and what rules apply when deciding the level of access granted with said credentials?
+* How much student informatioin should administrative staff have access to compared to support staff?
+* What student and appointment information does the college currently hold nd where is it stored?
 
 **Accessibility and support**
 * Do students with support needs require longer or priority slots?
@@ -79,8 +90,9 @@
 | Students | Why they are unsure which service to contact | Problem | "Can you tell me about the last time you needed support from the college? How did you work out who to contact?" |
 | Support Staff / Advisors | What happens to a booking when someone is sick or doesn't show | Exception | "Can you tell me about a time you couldn’t be at work when you had appointments booked? What happened to those appointments?" |
 | Management | Rules on when and how often students may book | Information needed | "What limits or rules currently apply to how often or how far ahead a student can book a service?" |
-| Data Protection Contact | Who is responsible for student data | Something we don't understand yet | "What information about students and their appointments does the college currently hold and who is responsible for protecting it??" |
-| Administrator | How appointments are arranged today | Current process | "Can you walk me through how an appointment gets arranged today, from the moment a student first makes contact?" |
+| Data Protection Contact | What student and appointment information the college currently holds | Something we don't understand yet | "What information about students and their appointments does the college currently hold?" |
+| Administrative Staff | How appointments are arranged today | Current process | "Can you walk me through how an appointment gets arranged today, from the moment a student first makes contact?" |
+| IT Administrator | How the current login system handles credentials | Current process | "Can you walk me through what happens when a student or staff member logs into college systems and how it's decided what each person can access?" |
 
 ## 5. Candidate Requirement
 

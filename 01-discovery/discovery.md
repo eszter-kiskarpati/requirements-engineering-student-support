@@ -37,16 +37,18 @@
 * The staff will be able to manage their own appointment calendar.
 * The students will be notified about making a successful booking.
 * The students will receive reminders for their upcoming appointment.
-* The system provides available appointments after filtering for the right department.
-* All departments use the same system for bookings.
+* The students will be able to change their booking date/time or to cancel it.
+* The system provides available appointments after filtering for the right service.
+* All services/support staff use the same system for bookings.
 
 
 ## 3. Unknowns
 * How many student services will this appointment system include?
 * How should cancellations be handled? 
-* Do all the departments manage their own schedule and opening hours?
-* Do they want advisors to set their own availability manually, or should it be changed through automation?
-* In what way should students receive reminders about their appointments?
+* Do all the support staff manage their own schedule and opening hours?
+* Do they want advisors to set their own availability manually, or should it be changed by management only?
+* Should students recieve reminders about their bookings/upcoming appointments?
+(* In what way should students receive reminders about their appointments?)
 * Is there a department / staff member the students can contact for general information?
 * Are all services able to use the same booking system?
 * Should unauthorizes users be able to view information? If yes, what information?
@@ -109,17 +111,19 @@
 
 | ID | Candidate Requirement |
 |---|---|
-| CR-F01 | The system should allow authenticated students to search and view available support appointment slots by service type, advisor or date. |
-| CR-F02 | The system should automatically send an email confirmation and calendar invite upon successful booking. |
-| CR-F03 | Support Staff should be able to set, update or block out their available consultation hours on a weekly recurring schedule. |
-| CR-F04 | The system should allow authenticated students to have access to contact information for the department / a specific advisor. |
-
+| CR-F01 | The system shall allow authenticated students to search and view available support appointment slots by service type, advisor or date.|
+| CR-F02 | The system shall automatically send an email confirmation and calendar invite upon successful booking |
+| CR-F03 | Support Staff shall be able to set, update or block out their available consultation hours on a weekly recurring schedule |
+| CR-F04 | The system shall allow authenticated students to have access to contact information for the department / a specific advisor |
+| CR-F05 | The system shall only allow authorised users to make a booking/change appointment availability |
+| CR-F06 | The system shall send automatic appointment reminders to students who booked successfuly |
+ 
 ### Non-Functional Requirements
 
 | ID | Category | Candidate Requirement |
 |---|---|---|
-| CR-N01 | Usability | First-time student users should be able to complete a standard appointment booking in under 2 minutes without prior training. |
-| CR-N02 | Performance | Booking availability searcg results should render within 2 seconds during peak usage periods. |
+| CR-N01 | Usability | First-time student users shall be able to complete a standard appointment booking in under 2 minutes without prior training. |
+| CR-N02 | Performance | Booking availability searcg results shall render within 2 seconds during peak usage periods. |
 
 
 ## 8. Requirements Surgery
@@ -129,7 +133,7 @@
     "Students should know who they are booking with."
 * **Flaws:** 
   
-    It is nclear what advisor details are shown, where they are displayed or how students verify qualifications.
+    It is unclear what advisor details are shown, where they are displayed or how students verify qualifications.
 * **Rewritten Requirement:**
   
     "The system should display the support advisor's full name, role title, department and direct contact or email on the appointment selection screen prior to booking confirmation."
