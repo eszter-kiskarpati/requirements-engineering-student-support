@@ -68,7 +68,7 @@
 
 **Constraints**
 * Is there a budget, a deadline or a required technology?
-* Are there rules about when a student may book, such as how fat ahead or the maximum per term?
+* Are there rules about when a student may book, such as how far ahead or the maximum per term?
 
 ## 3. Information Sources
 
@@ -96,7 +96,7 @@
 
 ## 5. Candidate Requirement
 
-### CR-F01 - The system should allow authenticated students to search and view available support appointment slots by service type, advisor or date.
+### CR-F01 - The system shall allow authenticated students to search and view available support appointment slots by service type, advisor or date.
 
 * **Source:** Initial discovery of the College Student Support Appointment Sytem scenario
 * **Status:** Candidate - requires further investigation and validation

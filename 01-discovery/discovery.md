@@ -84,18 +84,19 @@
 * Allow authorized students to filter through the systems based on their specific need.
 * Make sure that students are reminded about their upcoming appointments to avoid frequent no-shows.
 * Keep all sensitive/personal information safe and only accessable by authorized users.
-* 
 
 
 ## 6. Scope
 
+*Scope is a proposed boundary. Items marked "(Candidate)" are not stated in the scenario and must be confirmed by stakeholders.*
+
 ### In Scope
 * Student appointment searching, slot reservation, rescheduling and cancellation workflow.
-* Staff appointment management and daily appointment status dashboard.
-* Automated email and/or SMS notifications for booking confirmations and reminders.
-* Service usage analytics for management use.
-* Well organized contact information section for students to use.
-* 
+* Staff management of appointment availability.
+* Daily appointment status dashboard (Candidate).
+* Automated email and/or SMS notifications for booking confirmations and reminders (Candidate).
+* Service usage analytics for management use (Candidate).
+* Well organized contact information section for students to use (Candidate).
 
 ### Out of Scope
 * Development of custom video conferencing software.
@@ -136,7 +137,7 @@
     It is unclear what advisor details are shown, where they are displayed or how students verify qualifications.
 * **Rewritten Requirement:**
   
-    "The system should display the support advisor's full name, role title, department and direct contact or email on the appointment selection screen prior to booking confirmation."
+    "The system shall display the support advisor's full name, role title, department and direct contact or email on the appointment selection screen prior to booking confirmation." (Candidate)
 
 
 ## 9. Reflection
