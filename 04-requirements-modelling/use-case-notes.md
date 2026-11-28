@@ -8,7 +8,6 @@
 4. [Use Cases](#4-use-cases)
 5. [Use Case Narrative](#5-use-case-narrative)
 6. [Unknowns / Questions](#6-unknowns--questions)
-7. [Reflection](#7-reflection)
 
 
 *[Back to README](/README.md)*
@@ -98,8 +97,6 @@ Management needs to be able to view records on bookings, including cancellation 
 * We have no knowledge on rules about how many active bookings a student can have for the same service or for different services (FR-04).
 * We do not know whether the support staff can cancel appointments as well or only students, and if there is a deadline for cancellations (FR-07).
 * What would happen to a student's existing booking if that time is later blocked out? (FR-11) -> support staff side cancellation (FR-07).
-
-## 7. Reflection
 
 
 ---

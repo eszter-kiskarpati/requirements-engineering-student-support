@@ -7,7 +7,6 @@
 3. [Associations and Multiplicities](#3-associations-and-multiplicities)
 4. [Requirements-to-Model Check](#4-requirements-to-model-check)
 5. [Open Questions](#5-open-questions)
-6. [Reflection](#6-reflection)
 
 
 *[Back to README](/README.md)*
@@ -80,10 +79,6 @@ Who to ask is based on stakeholders identified in [discovery](/01-discovery/disc
 | Does a support staff member record non-attendance directly on an "Appointment" or only through the "Appointment Slot" they set? | Support staff | FR-10, FR-13 (Candidate) |
 | Is blocking out a time handled as a "status" on "Appointment Slot" (for example; available, booked, blocked) or does it work differently? | Support staff | FR-11 (Candidate) |
 | Does management only need statistics generated from appointments or do reports need to be saved as their own records? | Management | FR-14 (Candidate) |
-
-
-## 6. Reflection
-
 
 ---
 *[Back to top](#contents) | [Back to README](/README.md)*

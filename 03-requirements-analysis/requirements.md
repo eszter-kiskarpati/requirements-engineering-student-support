@@ -9,7 +9,6 @@
 5. [Non-functional requirements](#5-non-functional-requirements)
 6. [Business / Domain Requirements](#6-business--domain-requirements)
 7. [Quality Requirements](#7-quality-requirements)
-8. [Reflection](#8-reflection)
 
 
 *[Back to README](/README.md)*
@@ -92,6 +91,7 @@ There is a large number of unknown factors that we heve to look at and find an a
 | **FR-16** <br>(Candidate) | The system shall only allow authenticated students to make a booking. | Functional | Must | Student need; from scenario - "Who can make an appointment?" (CR-F05) | Ensures that only legitimate users can reserve appointments. | Attempt to book an appointment using a non-student account and confirm access is blocked. |
 | **FR-17** <br>(Candidate) | The system shall only allow authorised staff to change appointment availability. | Functional | Must | Staff need; from scenario - "Who can manage appointment availability?" (CR-F05) | Protects staff schedules from unauthorised changes. The roles authorised are unknown. | Attempt to change availability using a student account and confirm that access is denied. |
 | **FR-18** <br>(Candidate) | The system shall no longer show a booked slot as available to other students. | Functional | Must | Discovered during activity modelling [(UC-02, Book Appointment)](/04-requirements-modelling/activity-notes.md) | Prevents double booking, which is one of the current problems named in the scenario. | Book an appointment as a student, then log in as a different student; confirm that the slot is not shown as available. |
+| **FR-19** <br>(Candidate) | The system shall allow an authenticated student to view their booked appointments. | Functional | Must | Discovered during prototyping [(Screen 5, Appointment booked)](/05-prototype/prototype-notes.md#2-prototype-screens) | Students need to see their active bookings in order to check details or cancel an appointment (FR-07). | Log in as a student with an active booking and confirm the appointment details are displayed. | 
 ---
 
 
@@ -131,10 +131,6 @@ There is a large number of unknown factors that we heve to look at and find an a
 * **NFR-04 - Accessibility**
 
   The scenario names accessibility as something to consider. Students who need to use various aids need to be able to book appointments too. NFR-04 makes this actionable by requiring the system to meet a recognised web accessibility standard. Because the scenario does not specify a target level the exact standard is left open to be confirmed with the college. Once it's confirmed, it would be validated through an accessibility audit combining automated checks with manual keyboard and screen-reader testing.
-
-
-
-## 8. Reflection
 
 
 ---

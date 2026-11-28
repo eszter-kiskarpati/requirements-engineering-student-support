@@ -9,7 +9,6 @@
 5. [Unknowns](#5-unknowns)
 6. [Stakeholder Questions](#6-stakeholder-questions)
 7. [Modelling Decision](#7-modelling-decision)
-8. [Reflection](#8-reflection)
 
 
 *[Back to README](/README.md)*
@@ -82,9 +81,6 @@ The two guards cover every possible case and cannot both be true at the same tim
 ## 7. Modelling Decision
 
 On the "[not available]" branch I used an "UNKNOWN" note instead of inventing a solution like a waitlist. The scenario does not state what should happen when no slots are free and guessing a feature could lead to building something that the stakeholders never asked for. Instead, I kept the main diagram strictly to what is supported and explored a possible option in the use case narrative ([alternative flow - 2a (Candidate)](/04-requirements-modelling/use-case-notes.md#5-use-case-narrative)). 
-
-
-## 8. Reflection
 
 
 ---
