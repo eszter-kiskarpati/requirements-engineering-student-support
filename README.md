@@ -28,3 +28,5 @@ This repository contains my Requirements Engineering project work, including req
    * [Use case notes](/04-requirements-modelling/use-case-notes.md)
    * [Activity notes](/04-requirements-modelling/activity-notes.md)
    * [Domain modelling](/04-requirements-modelling/domain-modelling.md)
+5. [Prototype](/05-prototype/prototype-notes.md)
+6. [Agile Requirements - User stories](/06-agile-requirements/user-stories.md)

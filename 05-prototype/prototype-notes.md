@@ -8,6 +8,9 @@
 3. [Walkthrough, Findings and Improvements](#3-walkthrough-findings-and-improvements)
 
 
+*[Back to README](/README.md)*
+
+
 ## 1. Journey and Purpose
 
 This low-fidelity prototype models the main booking journey from use case **UC-02 (Book appointment)** where an authenticated student selects a support service then picks an available date and time slot and confirms their appointment.<br>
@@ -61,3 +64,6 @@ There are several questions that are still open and need stakeholder confirmatio
 * whether booked slots should be hidden or shown as unavailable
 * whether a slot should be held during confirmation
 * whether bookings need staff approval
+
+---
+*[Back to top](#contents) | [Back to README](/README.md)*
