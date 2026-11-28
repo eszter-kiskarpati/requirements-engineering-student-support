@@ -27,3 +27,4 @@ This repository contains my Requirements Engineering project work, including req
 4. [Requirements Modelling](04-requirements-modelling/)
    * [Use case notes](/04-requirements-modelling/use-case-notes.md)
    * [Activity notes](/04-requirements-modelling/activity-notes.md)
+   * [Domain modelling](/04-requirements-modelling/domain-modelling.md)

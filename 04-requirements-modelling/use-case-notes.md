@@ -77,7 +77,7 @@ Management needs to be able to view records on bookings, including cancellation 
 | **Supporting actors** | Not identified |
 | **Stakeholders and interests** | Student - to get support at a time that suits them <br> Support staff - Accurate schedule updates and clear visibility of booked appointments <br> Management - Reliable booking data for tracking service demand and attendance |
 | **Trigger** | An authenticated student chooses to book an open appointment slot for a support service. |
-| **Related requirements** | FR-01 (View available slots) <br> FR-03 (View service information) <br> FR-04(Book appointment) |
+| **Related requirements** | FR-01 (View available slots) <br> FR-03 (View service information) <br> FR-04 (Book appointment) <br> FR-18 (Slot no longer available to others) |
 
 ### Main flow
 1. The student selects a support service to view its description and available appointmens.
@@ -86,10 +86,10 @@ Management needs to be able to view records on bookings, including cancellation 
 4. The system records the booking for the student, marks the apt. slot as unavailable to other students and confirms the booking.
 
 ### Alternative flows
-* 1a. Student needs to check servide details first: <br> If the student is unsure which support service to choose, they view he service description (FR-03) before selecting a service and viewing its available appointments (FR-01).
-* 2a. No appointment slots are available: <br> If there are no open slots for the chosen support service, the system indicates that no slots are available and the student can select another service or exit without booking.
-* 3a. Selected slot is no longer available: <br> If the slot was booked or blocked out by staff (FR-11 (Candidate)) before the student confirms, the system informs the student that the slot is unavailable and prompts them to select another open slot.
-* 3b. Student cancels before confirming: <br> If the student decides not to go through with the booking before confirming the slot, no booking is recorded and the slot remains available.
+* **1a**. Student needs to check servide details first: <br> If the student is unsure which support service to choose, they view he service description (FR-03) before selecting a service and viewing its available appointments (FR-01).
+* **2a**. No appointment slots are available (Candidate): <br> If there are no open slots for the chosen support service, the system indicates that no slots are available and the student can select another service or exit without booking.
+* **3a**. Selected slot is no longer available: <br> If the slot was booked or blocked out by staff (FR-11 (Candidate)) before the student confirms, the system informs the student that the slot is unavailable and prompts them to select another open slot.
+* **3b**. Student cancels before confirming: <br> If the student decides not to go through with the booking before confirming the slot, no booking is recorded and the slot remains available.
 
 ## 6. Unknowns / Questions
 
@@ -100,3 +100,7 @@ Management needs to be able to view records on bookings, including cancellation 
 * What would happen to a student's existing booking if that time is later blocked out? (FR-11) -> support staff side cancellation (FR-07).
 
 ## 7. Reflection
+
+
+---
+*[Back to top](#contents) | [Back to README](/README.md)*
